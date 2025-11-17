@@ -12,5 +12,5 @@ app.use(express.json());
 app.use("/api", contactRoutes);
 
 // Start server
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+const PORT = 4000;
+app.listen(PORT, () => console.log(`Server running on https://dream-weavers-server.vercel.app/${PORT}`));

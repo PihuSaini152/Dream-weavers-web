@@ -8,7 +8,7 @@ export const sendMessage = (req, res) => {
     return res.status(400).json({ success: false, message: "All fields required" });
   }
 
-  const query = "INSERT INTO messages (name, email, message) VALUES (?, ?, ?)";
+  const query = "INSERT INTO bbb (name, email, message) VALUES (?, ?, ?)";
   const values = [name, email, message];
 
   db.query(query, values, async (err) => {
