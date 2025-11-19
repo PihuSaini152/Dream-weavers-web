@@ -1,22 +1,15 @@
-import { db } from "../db.js";
+import { User } from "../models/user.models.js";
 import nodemailer from "nodemailer";
 
-export const sendMessage = (req, res) => {
+export const sendMessage = async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
     return res.status(400).json({ success: false, message: "All fields required" });
   }
+console.log(name , email , message);
 
-  const query = "INSERT INTO bbb (name, email, message) VALUES (?, ?, ?)";
-  const values = [name, email, message];
-
-  db.query(query, values, async (err) => {
-    if (err) {
-      console.error("❌ Database Error:", err);
-      return res.status(500).json({ success: false, message: "Server error" });
-    }
-
+  const user = await User.create({"name" : name , "email" : email , "message" : message})
     // -------------------------
     // 📩 EMAIL SENDING SECTION
     // -------------------------
@@ -53,5 +46,5 @@ export const sendMessage = (req, res) => {
         message: "Message saved but email not sent.",
       });
     }
-  });
+ 
 };
