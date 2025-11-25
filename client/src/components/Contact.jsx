@@ -13,11 +13,12 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("https://dream-weavers-web.vercel.app/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData)
-    });
+    const response = await fetch("https://dream-weavers-web.vercel.app/api/contact", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(formData),
+});
+
 
     const result = await response.json();
     setStatus(result.message);
