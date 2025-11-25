@@ -282,33 +282,81 @@ nav {
 .about-section div {
   z-index: 2;
 }
-
 /* ===============================
-   ⚙️ SERVICES SECTION
+   📱 ABOUT — PERFECT MOBILE STACK (ONLY MOBILE)
 ================================*/
-.services-section {
-  position: relative;
-  background: radial-gradient(
-      circle at 10% 30%,
-      rgba(142, 99, 255, 0.08),
-      transparent 70%
-    ),
-    radial-gradient(
-      circle at 80% 70%,
-      rgba(183, 132, 255, 0.12),
-      transparent 60%
-    ),
-    var(--bg-dark);
-  overflow: hidden;
+@media (max-width: 480px) {
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: column !important;  /* Image upar + text niche */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .about-section h2 {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+
+  .about-img-box {
+    width: 80%;
+    max-width: 260px;
+    margin: 0 auto;
+    order: 1;
+  }
+
+  .about-img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(142, 99, 255, 0.4);
+  }
+
+  .about-content {
+    order: 2;
+    width: 95%;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+}
+@media (max-width: 480px) {
+  /* Yeh tumhari text + image wali row ko target karega */
+  #about div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* IMAGE FIRST */
+  #about img {
+    order: 1 !important;
+    width: 75% !important;
+    max-width: 260px !important;
+    height: auto !important;
+    margin-bottom: 20px !important;
+    
+  }
+  
+
+  /* TEXT SECOND */
+  #about p {
+    order: 2 !important;
+    text-align: center !important;
+    width: 95% !important;
+  }
+
+  #about h2 {
+    text-align: center !important;
+  }
 }
 
-.services-section h2 {
-  text-shadow: 0 0 18px rgba(142, 99, 255, 0.3);
-}
-
-.services-section p {
-  color: var(--text-muted);
-}
 
 /* ===============================
    💜 Skills Section

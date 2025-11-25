@@ -5,15 +5,19 @@ import connectDB from "./db.js";
 
 const app = express();
 
-// Middlewares
-app.use(cors({origin : process.env.ORIGIN}));
+// CORS FIX
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST"],
+}));
+
 app.use(express.json());
+
+// MongoDB Connect
+connectDB();
 
 // Routes
 app.use("/api", contactRoutes);
 
-connectDB()
-
-// Start server
-const PORT = 4000;
-app.listen(PORT, () => console.log(`Server running on http://dream-weavers-server.vercel.app/${PORT}`));
+// --- Vercel ke liye required ---
+export default app;

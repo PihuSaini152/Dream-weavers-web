@@ -81,8 +81,8 @@ export default function About() {
 
           {/* RIGHT SIDE PHOTO */}
           <motion.img
-            src="/your-photo.png"   // yaha apni photo ka path lagana
-            alt="Priyanka Saini"
+            src="/about.jpg"   // yaha apni photo ka path lagana
+            // alt="Priyanka Saini"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
