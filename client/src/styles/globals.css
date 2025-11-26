@@ -282,6 +282,26 @@ nav {
 .about-section div {
   z-index: 2;
 }
+
+
+
+
+/* 🔥 DESKTOP FIX — image resize problem solved */
+@media (min-width: 769px) {
+  #about img {
+    width: 280px !important;
+    height: 360px !important;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  /* row perfect align */
+  #about div[style*="display: flex"] {
+    align-items: center !important;
+  }
+}
+
+ 
 /* ===============================
    📱 ABOUT — PERFECT MOBILE STACK (ONLY MOBILE)
 ================================*/

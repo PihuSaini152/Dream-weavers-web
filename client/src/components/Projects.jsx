@@ -36,7 +36,7 @@ export default function Projects() {
       desc: "My own portfolio website showcasing my full-stack work, skills, and creative web experiences.",
       img: "/project5.jpg",
       tech: ["React", "Framer Motion", "CSS"],
-      live: "https://dreamweaversweb.vercel.app",
+      live: "https://dream-weavers-web-7ne6.vercel.app/",
     },
     {
       title: "Mini Projects Collection",

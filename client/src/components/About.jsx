@@ -52,6 +52,7 @@ export default function About() {
             alignItems: "flex-start",
             gap: "35px",
             marginBottom: "40px",
+           
           }}
         >
           {/* LEFT TEXT */}
@@ -86,6 +87,7 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
+            
             style={{
               width: "280px",
               height: "280px",
@@ -93,6 +95,7 @@ export default function About() {
               borderRadius: "20px",
               boxShadow: "0 0 20px rgba(142,99,255,0.25)",
               border: "2px solid rgba(255,255,255,0.1)",
+            
             }}
           />
         </div>
