@@ -29,7 +29,7 @@ export default function Projects() {
       desc: "E-commerce platform for buying and selling cars, built with modern UI and responsive layout.",
       img: "/project4.jpg",
       tech: ["React", "CSS", "JavaScript"],
-      live: "https://cars-ecommerce-priyanka.vercel.app",
+      live: "https://car-service-rho-azure.vercel.app/",
     },
     {
       title: "Personal Portfolio",
@@ -43,7 +43,7 @@ export default function Projects() {
       desc: "A collection of small web apps including weather app, todo list, and form validation projects.",
       img: "/project6.jpg",
       tech: ["HTML", "CSS", "JavaScript", "React"],
-      live: "https://miniapps-priyanka.vercel.app",
+      live: "https://resturent-one-tau.vercel.app/",
     },
   ];
 

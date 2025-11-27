@@ -44,8 +44,8 @@ export default function Footer() {
       </p>
 
       {/* Insta Button */}
-   <a 
-  href="https://instagram.com/your_username" 
+  <a 
+     href="https://www.instagram.com/dreamweaversweb"
   target="_blank"
   style={{
     display: "inline-flex",
@@ -71,7 +71,6 @@ export default function Footer() {
     e.currentTarget.style.boxShadow = "none";
   }}
 >
-  {/* Instagram Gradient Icon */}
   <svg 
     width="24" 
     height="24" 
