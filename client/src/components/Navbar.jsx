@@ -34,8 +34,8 @@ export default function Navbar() {
 
         
         {/* LOGO */}
-        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <img src="/assets/logo.png" alt="logo" style={{ height: "40px" }} />
+        <div style={{ display: "flex",   alignItems: "center", gap: "5px" }}>
+          <img src="/public/logo4.png" alt="logo" style={{ height: "80px" }} />
           {/* <h2 style={{ fontSize: "1.3rem", fontWeight: 600 }}>dream weavers web</h2> */}
         </div>
 

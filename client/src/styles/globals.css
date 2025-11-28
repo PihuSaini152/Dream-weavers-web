@@ -46,11 +46,16 @@ a:hover {
 /* ===============================
    🧭 NAVBAR STYLING
 ================================*/
+
 nav {
   background: rgba(5, 5, 5, 0.75);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  height: 80px;             /* 👈 fix height */
+  display: flex;
+  align-items: center;      
+ 
 }
 
 .desktop-menu a {
