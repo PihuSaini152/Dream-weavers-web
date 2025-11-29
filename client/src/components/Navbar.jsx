@@ -34,9 +34,9 @@ export default function Navbar() {
 
         
         {/* LOGO */}
-        <div style={{ display: "flex",   alignItems: "center", gap: "5px" }}>
-          <img src="/logo1.png" alt="logo" style={{ height: "80px" }} />
-          {/* <h2 style={{ fontSize: "1.3rem", fontWeight: 600 }}>dream weavers web</h2> */}
+        <div style={{ display: "flex",   alignItems: "center", gap: "5px",height: "40px", width:"70px" ,backgroundColor:"white", borderRadius:"5px"  }}>
+          <img src="/logo.png" alt="logo" style={{ height: "100px", width:"80px",paddingRight:"10px"}} />
+          
         </div>
 
         {/* DESKTOP MENU */}
