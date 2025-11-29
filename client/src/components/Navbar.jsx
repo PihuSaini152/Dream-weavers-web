@@ -34,8 +34,8 @@ export default function Navbar() {
 
         
         {/* LOGO */}
-        <div style={{ display: "flex",   alignItems: "center", gap: "5px",height: "40px", width:"70px" ,backgroundColor:"white", borderRadius:"5px"  }}>
-          <img src="/logo.png" alt="logo" style={{ height: "100px", width:"80px",paddingRight:"10px"}} />
+        <div style={{ display: "flex",   alignItems: "center", gap: "5px",height: "40px", width:"70px" ,backgroundColor:"white", borderRadius:"5px",marginLeft:"10px" }}>
+          <img src="/logo.png" alt="logo" style={{ height: "110px", width:"100px",paddingRight:"28px"}} />
           
         </div>
 
