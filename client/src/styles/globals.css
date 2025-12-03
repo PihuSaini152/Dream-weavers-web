@@ -102,7 +102,23 @@ nav {
   transform: translateX(6px);
   text-shadow: 0px 0px 14px var(--accent-glow);
 }
+#logodiv{
+  position: relative;
+  height: 40px;
+  width: 100px;
+  margin-left: 15px;
+  /* background-image: linear-gradient(to right, #7132CA, #C47BE4); */
+  background-color: black;
+  box-shadow: 0px 0px 10px 0px inset;
+  border-radius: 5px;
 
+}
+#logodiv img{
+height: 150px;
+position: absolute;
+top: -59px;
+right: -27px;
+}
 /* RESPONSIVE MENU */
 @media (max-width: 768px) {
   .desktop-menu {
@@ -111,6 +127,16 @@ nav {
   .mobile-toggle {
     display: block !important;
     cursor: pointer;
+  }
+   #logodiv {
+    height: 30px;
+    width: 80px;
+  }
+
+  #logodiv img {
+    height: 125px;
+    top: -51px;
+    right: -25px;
   }
 }
 .mobile-toggle {
