@@ -131,6 +131,8 @@ right: -27px;
    #logodiv {
     height: 30px;
     width: 80px;
+    float: left;
+    left: -25px;
   }
 
   #logodiv img {
@@ -138,6 +140,7 @@ right: -27px;
     top: -51px;
     right: -25px;
   }
+  
 }
 .mobile-toggle {
   display: none;
